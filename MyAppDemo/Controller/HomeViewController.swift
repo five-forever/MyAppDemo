@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("test push")
         setupUI()
     }
 
