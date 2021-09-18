@@ -14,11 +14,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - SnapKit
-  trunk:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
@@ -28,4 +27,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 76d2eded13e995fe0093ca438981f9366731a9ed
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.2

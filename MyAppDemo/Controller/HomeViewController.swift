@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
 
     lazy var testButton: UIButton = {
         let btn = UIButton()
-        btn.setTitle("测试纸+1", for: <#T##UIControl.State#>)
+        btn.setTitle("测试纸+1", for: .normal)
         return btn
     }()
 
