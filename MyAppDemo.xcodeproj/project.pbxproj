@@ -16,6 +16,8 @@
 		29B3DC7F26F31EBC00243D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B3DC7D26F31EBC00243D88 /* LaunchScreen.storyboard */; };
 		29B3DC8A26F31EBD00243D88 /* MyAppDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3DC8926F31EBD00243D88 /* MyAppDemoTests.swift */; };
 		29B3DC9526F31EBD00243D88 /* MyAppDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3DC9426F31EBD00243D88 /* MyAppDemoUITests.swift */; };
+		29ECC6E126FC7BDE00953B5F /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECC6E026FC7BDE00953B5F /* AddScheduleViewController.swift */; };
+		29F096B426FCA75E0069E6D5 /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F096B326FCA75E0069E6D5 /* CustomNavBar.swift */; };
 		4A30E8903AE6F6649FD9161D /* Pods_MyAppDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E564181637D1BE1736B1C1AD /* Pods_MyAppDemoUITests.framework */; };
 		4C8FB1B11F090C8BCE88D31C /* Pods_MyAppDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1932E16043A38E65AC8B7F0A /* Pods_MyAppDemo.framework */; };
 		A17BDC2DDFAB935992CC7948 /* Pods_MyAppDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD998FC1F9BE819EABD03B6 /* Pods_MyAppDemoTests.framework */; };
@@ -56,6 +58,8 @@
 		29B3DC9026F31EBD00243D88 /* MyAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B3DC9426F31EBD00243D88 /* MyAppDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDemoUITests.swift; sourceTree = "<group>"; };
 		29B3DC9626F31EBD00243D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29ECC6E026FC7BDE00953B5F /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
+		29F096B326FCA75E0069E6D5 /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		634A56843D6194B984D01DF6 /* Pods-MyAppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MyAppDemoTests/Pods-MyAppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		678D7A15EE94B9DD1A65CD70 /* Pods-MyAppDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppDemoTests.release.xcconfig"; path = "Target Support Files/Pods-MyAppDemoTests/Pods-MyAppDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7B4438955445AE540AFB0B3A /* Pods-MyAppDemo-MyAppDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppDemo-MyAppDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-MyAppDemo-MyAppDemoUITests/Pods-MyAppDemo-MyAppDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				29B3DC7626F31EB800243D88 /* HomeViewController.swift */,
+				29ECC6E026FC7BDE00953B5F /* AddScheduleViewController.swift */,
+				29F096B326FCA75E0069E6D5 /* CustomNavBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -435,8 +441,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F096B426FCA75E0069E6D5 /* CustomNavBar.swift in Sources */,
 				29B3DC7726F31EB800243D88 /* HomeViewController.swift in Sources */,
 				29B3DC7326F31EB800243D88 /* AppDelegate.swift in Sources */,
+				29ECC6E126FC7BDE00953B5F /* AddScheduleViewController.swift in Sources */,
 				29B3DC7526F31EB800243D88 /* SceneDelegate.swift in Sources */,
 				2987900D26F49549003A4A9F /* HomeViewModel.swift in Sources */,
 			);
@@ -615,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RH2S23DJK;
 				INFOPLIST_FILE = MyAppDemo/Info.plist;
@@ -625,6 +634,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = talos.MyAppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -636,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RH2S23DJK;
 				INFOPLIST_FILE = MyAppDemo/Info.plist;
@@ -646,6 +657,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = talos.MyAppDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
