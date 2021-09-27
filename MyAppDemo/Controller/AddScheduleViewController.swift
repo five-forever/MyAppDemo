@@ -13,9 +13,6 @@ import RxSwift
 
 class AddScheduleViewController: UIViewController {
 
-    let navBar = CustomNavBar()
-    let navController = UINavigationController()
-
     lazy var bgView: UIView = {
         let view = UIView()
         view.backgroundColor = .lightGray
@@ -35,26 +32,15 @@ class AddScheduleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavbar()
         setupUI()
+        setupNavbar()
     }
 
     func setupNavbar() {
-        self.bgView.addSubview(navBar)
-        navBar.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 80)
-
-        let backButton = UIBarButtonItem(
-            barButtonSystemItem: .cancel,
-            target: self,
-            action: #selector(back))
-
-        let submitButton = UIBarButtonItem(
-            barButtonSystemItem: .done,
-            target: self,
-            action: #selector(back))
-
-        navController.navigationItem.leftBarButtonItem = backButton
-        navController.navigationItem.rightBarButtonItem = submitButton
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.barStyle = .black
     }
 
     func setupUI() {

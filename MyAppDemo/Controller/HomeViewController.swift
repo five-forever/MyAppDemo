@@ -54,6 +54,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupNavbar()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barStyle = .black
+    }
+
+    func setupNavbar() {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.barStyle = .black
     }
 
     func setupUI() {
@@ -100,7 +113,7 @@ class HomeViewController: UIViewController {
         if #available(iOS 13.0, *) {
             vc.isModalInPresentation = false
         }
-        self.present(vc, animated: true, completion: nil)
+        self.navigationController?.pushViewController(vc,animated: true);
     }
 
 

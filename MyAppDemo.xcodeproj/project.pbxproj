@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		2987900D26F49549003A4A9F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2987900C26F49549003A4A9F /* HomeViewModel.swift */; };
 		29B3DC7326F31EB800243D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3DC7226F31EB800243D88 /* AppDelegate.swift */; };
-		29B3DC7526F31EB800243D88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3DC7426F31EB800243D88 /* SceneDelegate.swift */; };
 		29B3DC7726F31EB800243D88 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3DC7626F31EB800243D88 /* HomeViewController.swift */; };
 		29B3DC7A26F31EB800243D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B3DC7826F31EB800243D88 /* Main.storyboard */; };
 		29B3DC7C26F31EBC00243D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29B3DC7B26F31EBC00243D88 /* Assets.xcassets */; };
 		29B3DC7F26F31EBC00243D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B3DC7D26F31EBC00243D88 /* LaunchScreen.storyboard */; };
 		29B3DC8A26F31EBD00243D88 /* MyAppDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3DC8926F31EBD00243D88 /* MyAppDemoTests.swift */; };
 		29B3DC9526F31EBD00243D88 /* MyAppDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B3DC9426F31EBD00243D88 /* MyAppDemoUITests.swift */; };
+		29C05D7026FDA04A0069E9C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C05D6F26FDA04A0069E9C1 /* SceneDelegate.swift */; };
 		29ECC6E126FC7BDE00953B5F /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ECC6E026FC7BDE00953B5F /* AddScheduleViewController.swift */; };
 		29F096B426FCA75E0069E6D5 /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F096B326FCA75E0069E6D5 /* CustomNavBar.swift */; };
 		4A30E8903AE6F6649FD9161D /* Pods_MyAppDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E564181637D1BE1736B1C1AD /* Pods_MyAppDemoUITests.framework */; };
@@ -46,7 +46,6 @@
 		2987900C26F49549003A4A9F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		29B3DC6F26F31EB800243D88 /* MyAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B3DC7226F31EB800243D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29B3DC7426F31EB800243D88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		29B3DC7626F31EB800243D88 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29B3DC7926F31EB800243D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29B3DC7B26F31EBC00243D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		29B3DC9026F31EBD00243D88 /* MyAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B3DC9426F31EBD00243D88 /* MyAppDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDemoUITests.swift; sourceTree = "<group>"; };
 		29B3DC9626F31EBD00243D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C05D6F26FDA04A0069E9C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		29ECC6E026FC7BDE00953B5F /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
 		29F096B326FCA75E0069E6D5 /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		634A56843D6194B984D01DF6 /* Pods-MyAppDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAppDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-MyAppDemoTests/Pods-MyAppDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		2987900426F49433003A4A9F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				29B3DC7426F31EB800243D88 /* SceneDelegate.swift */,
+				29C05D6F26FDA04A0069E9C1 /* SceneDelegate.swift */,
 				29B3DC7226F31EB800243D88 /* AppDelegate.swift */,
 			);
 			path = Common;
@@ -445,8 +445,8 @@
 				29B3DC7726F31EB800243D88 /* HomeViewController.swift in Sources */,
 				29B3DC7326F31EB800243D88 /* AppDelegate.swift in Sources */,
 				29ECC6E126FC7BDE00953B5F /* AddScheduleViewController.swift in Sources */,
-				29B3DC7526F31EB800243D88 /* SceneDelegate.swift in Sources */,
 				2987900D26F49549003A4A9F /* HomeViewModel.swift in Sources */,
+				29C05D7026FDA04A0069E9C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
